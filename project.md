@@ -2,6 +2,55 @@
 
 ## web
 
+### home
+
+```js
+let home = {
+  'about-us': {
+    id: 4,
+    title: 'pharmacy',
+    sub_title: 'sub title',
+    about: 'we do what is good',
+    user_id: 1,
+    deleted_at: null,
+    created_at: null,
+    updated_at: null,
+  },
+  services: [
+    {
+      id: 1,
+      name: 'web',
+      desc: 'web services',
+      icon: 'web.png',
+      user_id: 1,
+      deleted_at: null,
+      created_at: null,
+      updated_at: null,
+    },
+  ],
+  'contact-us': {
+    id: 2,
+    phone: '123465789',
+    email: 'email@email.com',
+    user_id: 1,
+    deleted_at: null,
+    created_at: null,
+    updated_at: null,
+  },
+  social: {
+    id: 1,
+    facebook: 'facebook.com',
+    whatsapp: 'whatsapp.com',
+    twitter: 'twitter.com',
+    instagram: 'instagram.com',
+    user_id: 1,
+    deleted_at: null,
+    created_at: null,
+    updated_at: null,
+  },
+};
+```
+
 ## /pharmacies
 
 ```js
