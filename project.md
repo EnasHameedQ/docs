@@ -51,7 +51,9 @@ let homeData = {
 };
 ```
 
-## /pharmacies
+---
+
+### /pharmacies
 
 ```js
 let pharmacies = [
@@ -93,9 +95,17 @@ let pharmacies = [
 ];
 ```
 
-## /admin
+---
 
-### /ads
+---
+
+---
+
+## dashboards
+
+### /admin
+
+#### /admin/ads
 
 ```js
 let ads = [
@@ -115,4 +125,18 @@ let ads = [
 ];
 ```
 
-## /client
+#### /admin/pharmacies
+
+#### /admin/orders
+
+#### /admin/users
+
+---
+
+### /pharmacies
+
+---
+
+### /client
+
+---
