@@ -42,7 +42,7 @@ let pharmacies = [
 ];
 ```
 
-## /pharmacies/2
+## /ads
 
 ```js
 let pharmacy = {
