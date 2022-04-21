@@ -131,6 +131,8 @@ let ads = [
 
 #### /admin/users
 
+#### /admin/site
+
 ---
 
 ### /pharmacies
