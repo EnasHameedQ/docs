@@ -5,7 +5,7 @@
 ### home
 
 ```js
-let home = {
+let homeData = {
   'about-us': {
     id: 4,
     title: 'pharmacy',
