@@ -33,7 +33,67 @@
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"name": "get all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "{{admin}}/ads",
+											"host": [
+												"{{admin}}"
+											],
+											"path": [
+												"ads"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 23 Apr 2022 19:10:25 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 23 Apr 2022 19:10:25 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.4"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Set-Cookie",
+											"value": "laravel_session=eyJpdiI6IklGNFJjQVhGTEZaeFRmK3FFYTgxUnc9PSIsInZhbHVlIjoiQ1pwbmdmc2ZKQlg4NjVVcnFla1c0ZTlwbGVZbitnYlR1ajZHYWlWWTRIbEZmWkt5RTlJb0pjM1g1RlgzUkczYWlwRWhTendrZHJ3SEtXQjUzSjRGSWw5dUZPTmd1VVRmM213NXg5aXYwMHhCc1hMMllRVnozbzJMTy9xdWdETzMiLCJtYWMiOiJlMzMwOTAxODg2MzczOGI5MzA4NDg5ZjM3NTlhNzdjZTYxMTUwMTQyOWM4ZmEzMjBjNzIyZTU3NmRmODA3N2ZkIiwidGFnIjoiIn0%3D; expires=Sat, 23-Apr-2022 21:10:25 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 3,\n        \"title\": \"ad title\",\n        \"image\": \"1234.png\",\n        \"link\": \"https:://google.com\",\n        \"ad_position\": \"home\",\n        \"start_at\": \"2022-04-20\",\n        \"end_at\": \"2022-05-20\",\n        \"user_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": \"2022-04-20T21:02:40.000000Z\",\n        \"updated_at\": \"2022-04-20T21:02:40.000000Z\"\n    },\n    {\n        \"id\": 4,\n        \"title\": \"ad title\",\n        \"image\": \"1234.png\",\n        \"link\": \"https:://google.com\",\n        \"ad_position\": \"home\",\n        \"start_at\": \"2022-04-20\",\n        \"end_at\": \"2022-05-20\",\n        \"user_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": \"2022-04-20T21:11:08.000000Z\",\n        \"updated_at\": \"2022-04-20T21:11:08.000000Z\"\n    },\n    {\n        \"id\": 5,\n        \"title\": \"ad title\",\n        \"image\": \"1234.png\",\n        \"link\": \"https:://google.com\",\n        \"ad_position\": \"home\",\n        \"start_at\": \"2022-04-20\",\n        \"end_at\": \"2022-05-20\",\n        \"user_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": \"2022-04-20T21:39:06.000000Z\",\n        \"updated_at\": \"2022-04-20T21:39:06.000000Z\"\n    }\n]"
+								}
+							]
 						},
 						{
 							"name": "get one item",
@@ -51,7 +111,64 @@
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"name": "get one item",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{admin}}/ads/3",
+											"host": [
+												"{{admin}}"
+											],
+											"path": [
+												"ads",
+												"3"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 23 Apr 2022 19:17:02 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 23 Apr 2022 19:17:02 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.4"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Set-Cookie",
+											"value": "laravel_session=eyJpdiI6IkRFb3krVVp2VFhhUmJ4L053NTBRV3c9PSIsInZhbHVlIjoiRXlpNDZnQkRNQ2pWQm9KMmdFUlNUYjdocVdjNlNaNXhwUHJwbmE0SHQ0T0NaZVJENHFIaUdOcFhyZGxNWk53clp4WWl4RVVidllDNFF1Q3ZZWlVYREp1RzhUMWlLWjRsT2x1d0hnd2JIZ0ZiSzJ4VzBGbnp2enFJd1VLUGxua3AiLCJtYWMiOiI2ZmFhMTIwMDUzODQwNWRlZWIxNzcyMTNmODRjNGIwZDQyYjc2MDllNGI5ODc1NGVkZWJmZTFjNmEyMmUyYjNiIiwidGFnIjoiIn0%3D; expires=Sat, 23-Apr-2022 21:17:02 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 3,\n        \"title\": \"ad title\",\n        \"image\": \"1234.png\",\n        \"link\": \"https:://google.com\",\n        \"ad_position\": \"home\",\n        \"start_at\": \"2022-04-20\",\n        \"end_at\": \"2022-05-20\",\n        \"user_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": \"2022-04-20T21:02:40.000000Z\",\n        \"updated_at\": \"2022-04-20T21:02:40.000000Z\"\n    }\n]"
+								}
+							]
 						},
 						{
 							"name": "add",
@@ -500,7 +617,67 @@
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"name": "get",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "{{admin}}/site",
+											"host": [
+												"{{admin}}"
+											],
+											"path": [
+												"site"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 23 Apr 2022 19:22:38 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 23 Apr 2022 19:22:38 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.4"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Set-Cookie",
+											"value": "laravel_session=eyJpdiI6IjY3MzExTndWdE9IRzhaSmIvQVlWVUE9PSIsInZhbHVlIjoiRGdQWXF4RXhFSVBIMUtHVkRBSGpvaUhjTDJ6RWpjVHFEcGh2K29TZ1gwRHgvYk5FR0hDcTQ4YWNwMXZHNlZkdXNrS3dYQlJyMHJtQ3Rmei9ZdG5FNjBFekF1cGtqNEdPYmtjd0tHaFZKTmRjZ0hBYmV0TFFZa0thRjYwTzBDd2oiLCJtYWMiOiIxZGFhZGUwZDNjNDRjZmRmMjZmYzBlOWQ4NWI3YzRlZmRjY2FlZWI0ZDQxOGE4NjE3YjM3ZjVhMDg4ZmQ4ZTJjIiwidGFnIjoiIn0%3D; expires=Sat, 23-Apr-2022 21:22:38 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"about-us\": {\n        \"id\": 4,\n        \"title\": \"title here bla bla bla b title here bla bla bla b\",\n        \"sub_title\": \"sub title title here bla bla bla btitle here bla bla bla btitle here bla bla bla btitle here bla bla bla b\",\n        \"about\": \"about us title here bla bla bla btitle here bla bla bla b\",\n        \"user_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": null,\n        \"updated_at\": \"2022-04-21T20:31:19.000000Z\"\n    },\n    \"services\": [\n        {\n            \"id\": 1,\n            \"name\": \"title here bla bla bla b title here bla bla bla b\",\n            \"desc\": \"sub title title here bla bla bla btitle here bla bla bla btitle here bla bla bla btitle here bla bla bla b\",\n            \"icon\": \"about us title here bla bla bla btitle here bla bla bla b\",\n            \"user_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": null,\n            \"updated_at\": \"2022-04-22T01:18:30.000000Z\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"new service for our site\",\n            \"desc\": \"sub title title here bla bla bla btitle here bla bla bla btitle here bla bla bla btitle here bla bla bla b\",\n            \"icon\": \"about us title here bla bla bla btitle here bla bla bla b\",\n            \"user_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": \"2022-04-22T01:25:08.000000Z\",\n            \"updated_at\": \"2022-04-22T01:25:08.000000Z\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"naif naif naif naif naif naif\",\n            \"desc\": \"sub title title here bla bla bla btitle here bla bla bla btitle here bla bla bla btitle here bla bla bla b\",\n            \"icon\": \"about us title here bla bla bla btitle here bla bla bla b\",\n            \"user_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": \"2022-04-22T01:27:13.000000Z\",\n            \"updated_at\": \"2022-04-22T01:27:40.000000Z\"\n        }\n    ],\n    \"contact-us\": {\n        \"id\": 2,\n        \"phone\": \"123456789\",\n        \"email\": \"em@gmial.com\",\n        \"user_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": null,\n        \"updated_at\": \"2022-04-22T01:34:16.000000Z\"\n    },\n    \"social\": {\n        \"id\": 1,\n        \"facebook\": \"facebook.com/new\",\n        \"whatsapp\": \"whatsapp.com\",\n        \"twitter\": \"twitter.com\",\n        \"instagram\": \"instagram.com\",\n        \"user_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": null,\n        \"updated_at\": \"2022-04-22T01:42:54.000000Z\"\n    }\n}"
+								}
+							]
 						}
 					]
 				},
@@ -529,7 +706,67 @@
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"name": "get all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "{{admin}}/clients",
+											"host": [
+												"{{admin}}"
+											],
+											"path": [
+												"clients"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 23 Apr 2022 19:23:29 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 23 Apr 2022 19:23:29 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.4"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Set-Cookie",
+											"value": "laravel_session=eyJpdiI6InFNVktHbXlDdXJ1emdJU2FrTng3SFE9PSIsInZhbHVlIjoiWGt6bVFyZmZ1NG0rR21TL1p2am9KV0MyZHNld2hlQ21YQVZLSU9Fd29JMFdpdVo3dFlicytrUVV4TldUSEdWQ0pWcHl5UTVjVG5MNGtZYTBaeVljL3F5KzRRNXAyN2poejFNdUpCRGRMS05xam5wcUtXUGdRdTZVckd1ellia3IiLCJtYWMiOiI4ZWVhNzM1ZjVlMjhkZjQxYmZjODg4YTRmNTBlNTc3MmUzMjYyYmQwYWRjOWNlM2IyMjk4YmVhYmVmOGFjZWUxIiwidGFnIjoiIn0%3D; expires=Sat, 23-Apr-2022 21:23:29 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 1,\n        \"full_name\": \"Ali ahmed\",\n        \"phone\": \"123456789222\",\n        \"user_id\": 3,\n        \"deleted_at\": null,\n        \"created_at\": null,\n        \"updated_at\": \"2022-04-23T17:31:20.000000Z\",\n        \"user\": {\n            \"id\": 3,\n            \"name\": \"client\",\n            \"email\": \"client@gmail.com\",\n            \"email_verified_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"created_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"updated_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"is_active\": 1\n        }\n    }\n]"
+								}
+							]
 						}
 					]
 				},
@@ -558,7 +795,67 @@
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"name": "get all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "{{admin}}/orders",
+											"host": [
+												"{{admin}}"
+											],
+											"path": [
+												"orders"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 23 Apr 2022 19:06:18 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 23 Apr 2022 19:06:18 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.4"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Set-Cookie",
+											"value": "laravel_session=eyJpdiI6ImlXbElWcEN3NTRkQkxEUjQ0N3FDclE9PSIsInZhbHVlIjoiUEJOd0g4b29qekdCTFZDVDEwVGVvNjdRdGFxN3FDRkQwQ2t2c2J5THpDYnNoR2J6Y2RVS3cxYXBLdWF3OXRtTk0vMk9qUk8wU2VSRHFiNWdFdmNya1J0OGRrbTU0ZlVydWpwRGxMaGNlOHFldEhDdFc0OTZudHFrbHJPeW5ZODUiLCJtYWMiOiJhY2M1ODdkNDk4YWQyNDY4MDRmNDQ3Mzk1OWVhYjM3NmNhZDE5NGM5ZTM3ODVlZDFlNmQ2MjFlNmY5MjhhZjU1IiwidGFnIjoiIn0%3D; expires=Sat, 23-Apr-2022 21:06:18 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 1,\n        \"periodic\": 0,\n        \"re_order_date\": null,\n        \"client_id\": 1,\n        \"pharmacy_id\": 3,\n        \"deleted_at\": null,\n        \"created_at\": null,\n        \"updated_at\": null,\n        \"order_details\": [\n            {\n                \"id\": 1,\n                \"drug_name\": \"naif\",\n                \"drug_image\": \"123.png\",\n                \"type\": \"good\",\n                \"quantity\": \"2\",\n                \"details\": \"bla bla bla\",\n                \"order_id\": 1,\n                \"deleted_at\": null,\n                \"created_at\": null,\n                \"updated_at\": null\n            }\n        ],\n        \"client\": {\n            \"id\": 1,\n            \"full_name\": \"Ali ahmed\",\n            \"phone\": \"123456789222\",\n            \"user_id\": 3,\n            \"deleted_at\": null,\n            \"created_at\": null,\n            \"updated_at\": \"2022-04-23T17:31:20.000000Z\"\n        },\n        \"pharmacy\": {\n            \"id\": 3,\n            \"name\": \"Tokyo\",\n            \"logo\": \"123.png\",\n            \"about\": \"tokyo pharmacy\",\n            \"email\": \"ali@email.com\",\n            \"is_full_time\": 0,\n            \"from\": null,\n            \"to\": null,\n            \"address\": \"Yemen\",\n            \"lat\": null,\n            \"lng\": null,\n            \"user_id\": 2,\n            \"neighborhood_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": null,\n            \"updated_at\": null\n        }\n    }\n]"
+								}
+							]
 						}
 					]
 				},
@@ -597,7 +894,77 @@
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"name": "get all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "{{admin}}/pharmacies?city=sana&pharmacy_name=ali",
+											"host": [
+												"{{admin}}"
+											],
+											"path": [
+												"pharmacies"
+											],
+											"query": [
+												{
+													"key": "city",
+													"value": "sana"
+												},
+												{
+													"key": "pharmacy_name",
+													"value": "ali"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 23 Apr 2022 19:23:55 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 23 Apr 2022 19:23:55 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.4"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Set-Cookie",
+											"value": "laravel_session=eyJpdiI6ImVNdXRrRVdoYXZ4dFpnV0Zialg3TXc9PSIsInZhbHVlIjoiWWxhZlZXMHNuMGhpRzlTcDIzMm9IN285SlJIVk1xaUJtbFEyOUh4NUZZK0F4SlhkVzRGU0dPWXhzSkpOK2VadWtDbXlxc21Oc1hNYXJEemtRV1NiWEExblZRVitpTGM3UGJIbG9ubVV5Mng3eXBUVUMzM0FkOTZibFc4RXZJcHgiLCJtYWMiOiI2M2RkNjUwOTkzMzA0Mzk5ZjE5NGI4ZmEwZWMxNjVlMmI4ZmNiYzFjNTNlM2RiOTQ2NWZjYmQ1MDIwMmRjMzRmIiwidGFnIjoiIn0%3D; expires=Sat, 23-Apr-2022 21:23:55 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"Yemen\",\n        \"logo\": \"9876.pmg\",\n        \"about\": \"Ali pharmacy\",\n        \"email\": \"ali@email.com\",\n        \"is_full_time\": 0,\n        \"from\": null,\n        \"to\": null,\n        \"address\": \"Yemen\",\n        \"lat\": null,\n        \"lng\": null,\n        \"user_id\": 1,\n        \"neighborhood_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": null,\n        \"updated_at\": \"2022-04-18T21:52:36.000000Z\",\n        \"neighborhood\": {\n            \"id\": 1,\n            \"name\": \"Naif\",\n            \"directorate_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"directorate\": {\n                \"id\": 1,\n                \"name\": \"One\",\n                \"city_id\": 1,\n                \"deleted_at\": null,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"city\": {\n                    \"id\": 1,\n                    \"name\": \"Sana'a\",\n                    \"deleted_at\": null,\n                    \"created_at\": null,\n                    \"updated_at\": null\n                }\n            }\n        }\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Tokyo\",\n        \"logo\": \"123.png\",\n        \"about\": \"tokyo pharmacy\",\n        \"email\": \"ali@email.com\",\n        \"is_full_time\": 0,\n        \"from\": null,\n        \"to\": null,\n        \"address\": \"Yemen\",\n        \"lat\": null,\n        \"lng\": null,\n        \"user_id\": 2,\n        \"neighborhood_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": null,\n        \"updated_at\": null,\n        \"neighborhood\": {\n            \"id\": 1,\n            \"name\": \"Naif\",\n            \"directorate_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"directorate\": {\n                \"id\": 1,\n                \"name\": \"One\",\n                \"city_id\": 1,\n                \"deleted_at\": null,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"city\": {\n                    \"id\": 1,\n                    \"name\": \"Sana'a\",\n                    \"deleted_at\": null,\n                    \"created_at\": null,\n                    \"updated_at\": null\n                }\n            }\n        }\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Enas\",\n        \"logo\": \"123.png\",\n        \"about\": \"Enas pharmacy\",\n        \"email\": \"enas@email.com\",\n        \"is_full_time\": 0,\n        \"from\": null,\n        \"to\": null,\n        \"address\": \"Yemen\",\n        \"lat\": null,\n        \"lng\": null,\n        \"user_id\": 2,\n        \"neighborhood_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": null,\n        \"updated_at\": null,\n        \"neighborhood\": {\n            \"id\": 1,\n            \"name\": \"Naif\",\n            \"directorate_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"directorate\": {\n                \"id\": 1,\n                \"name\": \"One\",\n                \"city_id\": 1,\n                \"deleted_at\": null,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"city\": {\n                    \"id\": 1,\n                    \"name\": \"Sana'a\",\n                    \"deleted_at\": null,\n                    \"created_at\": null,\n                    \"updated_at\": null\n                }\n            }\n        }\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Naif 2\",\n        \"logo\": \"1234.png\",\n        \"about\": null,\n        \"email\": null,\n        \"is_full_time\": 0,\n        \"from\": null,\n        \"to\": null,\n        \"address\": null,\n        \"lat\": null,\n        \"lng\": null,\n        \"user_id\": 1,\n        \"neighborhood_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": \"2022-04-18T21:38:08.000000Z\",\n        \"updated_at\": \"2022-04-18T21:38:08.000000Z\",\n        \"neighborhood\": {\n            \"id\": 1,\n            \"name\": \"Naif\",\n            \"directorate_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"directorate\": {\n                \"id\": 1,\n                \"name\": \"One\",\n                \"city_id\": 1,\n                \"deleted_at\": null,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"city\": {\n                    \"id\": 1,\n                    \"name\": \"Sana'a\",\n                    \"deleted_at\": null,\n                    \"created_at\": null,\n                    \"updated_at\": null\n                }\n            }\n        }\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Naif 2\",\n        \"logo\": \"9876.pmg\",\n        \"about\": \"Naif new pharmacy\",\n        \"email\": null,\n        \"is_full_time\": 0,\n        \"from\": null,\n        \"to\": null,\n        \"address\": null,\n        \"lat\": null,\n        \"lng\": null,\n        \"user_id\": 1,\n        \"neighborhood_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": \"2022-04-18T21:40:45.000000Z\",\n        \"updated_at\": \"2022-04-18T21:58:31.000000Z\",\n        \"neighborhood\": {\n            \"id\": 1,\n            \"name\": \"Naif\",\n            \"directorate_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"directorate\": {\n                \"id\": 1,\n                \"name\": \"One\",\n                \"city_id\": 1,\n                \"deleted_at\": null,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"city\": {\n                    \"id\": 1,\n                    \"name\": \"Sana'a\",\n                    \"deleted_at\": null,\n                    \"created_at\": null,\n                    \"updated_at\": null\n                }\n            }\n        }\n    },\n    {\n        \"id\": 10,\n        \"name\": \"Naif 2\",\n        \"logo\": \"1234.png\",\n        \"about\": null,\n        \"email\": null,\n        \"is_full_time\": 0,\n        \"from\": null,\n        \"to\": null,\n        \"address\": null,\n        \"lat\": null,\n        \"lng\": null,\n        \"user_id\": 1,\n        \"neighborhood_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": \"2022-04-20T20:38:41.000000Z\",\n        \"updated_at\": \"2022-04-20T20:38:41.000000Z\",\n        \"neighborhood\": {\n            \"id\": 1,\n            \"name\": \"Naif\",\n            \"directorate_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"directorate\": {\n                \"id\": 1,\n                \"name\": \"One\",\n                \"city_id\": 1,\n                \"deleted_at\": null,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"city\": {\n                    \"id\": 1,\n                    \"name\": \"Sana'a\",\n                    \"deleted_at\": null,\n                    \"created_at\": null,\n                    \"updated_at\": null\n                }\n            }\n        }\n    },\n    {\n        \"id\": 11,\n        \"name\": \"Naif 2\",\n        \"logo\": \"1234.png\",\n        \"about\": null,\n        \"email\": null,\n        \"is_full_time\": 0,\n        \"from\": null,\n        \"to\": null,\n        \"address\": null,\n        \"lat\": null,\n        \"lng\": null,\n        \"user_id\": 1,\n        \"neighborhood_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": \"2022-04-21T02:54:03.000000Z\",\n        \"updated_at\": \"2022-04-21T02:54:03.000000Z\",\n        \"neighborhood\": {\n            \"id\": 1,\n            \"name\": \"Naif\",\n            \"directorate_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"directorate\": {\n                \"id\": 1,\n                \"name\": \"One\",\n                \"city_id\": 1,\n                \"deleted_at\": null,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"city\": {\n                    \"id\": 1,\n                    \"name\": \"Sana'a\",\n                    \"deleted_at\": null,\n                    \"created_at\": null,\n                    \"updated_at\": null\n                }\n            }\n        }\n    }\n]"
+								}
+							]
 						}
 					]
 				},
@@ -625,7 +992,69 @@
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"name": "get",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{admin}}/profile?id=1",
+											"host": [
+												"{{admin}}"
+											],
+											"path": [
+												"profile"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 23 Apr 2022 19:24:06 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 23 Apr 2022 19:24:06 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.4"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Set-Cookie",
+											"value": "laravel_session=eyJpdiI6IkZpVTMyMTNJdjdKbUhyMU9KNU5WQnc9PSIsInZhbHVlIjoib0NRbGZsV2JkQXJReG0wT0JUclNFSDV4UEhtYjBQcjBaWUdFRG41UzRYVEM2b3VidDBkM0xNdXRocVZxZ1Yzb1pWK0U4dHNLWk9OMG1oakp5cVJUeDYwZXZObzJGeVE2cGMvNzIxWjJna3k3MHZMa2NTZEs3WEFTUTkvWU84d3UiLCJtYWMiOiI5NWU2OGU0ODBhODMyZTU3ZDEyNDNlOTNiZjM0NjI1OWQwNGVlM2E2ODRiODk0ZWQ0YTgzOWVhM2QzODU0YzRiIiwidGFnIjoiIn0%3D; expires=Sat, 23-Apr-2022 21:24:06 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"name\": \"Ali\",\n    \"email\": \"super@gmail.com\"\n}"
+								}
+							]
 						},
 						{
 							"name": "update",
@@ -690,7 +1119,69 @@
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"name": "get",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{clients}}/profile?id=1",
+											"host": [
+												"{{clients}}"
+											],
+											"path": [
+												"profile"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 23 Apr 2022 19:24:18 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 23 Apr 2022 19:24:18 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.4"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Set-Cookie",
+											"value": "laravel_session=eyJpdiI6IjZvWHFxSjlrUm9IS2VhTmRBWlBuV1E9PSIsInZhbHVlIjoiVW1QTnpXdkk3Zmg0SW9DOVZTZldVNkJndzBOOVVMRCtZVVlzNDRrdndBUUpxYXFVTkx5V3AwYWM5Znp6a1o2KzVScEtUang5RFJhcjllc1lmeFFZanNjVHRITG53WmdOell2V2U4R1JvZFdxVmVTbU1lZ3FWeDk1UHZCYk56bnoiLCJtYWMiOiJlYzQwZmM0ZjY0NWE5MDI2OThjMTNjYTJjZGI0NTEwYjRiOGRlNjI2NThiMjE4OTExNGU5YjAxMTk3ZDI1ZmRiIiwidGFnIjoiIn0%3D; expires=Sat, 23-Apr-2022 21:24:18 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 1,\n    \"full_name\": \"Ali ahmed\",\n    \"phone\": \"123456789222\",\n    \"user_id\": 3,\n    \"deleted_at\": null,\n    \"created_at\": null,\n    \"updated_at\": \"2022-04-23T17:31:20.000000Z\"\n}"
+								}
+							]
 						},
 						{
 							"name": "update",
@@ -754,7 +1245,60 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "get all",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{pharmacies}}",
+									"host": [
+										"{{pharmacies}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 23 Apr 2022 19:24:25 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 23 Apr 2022 19:24:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "laravel_session=eyJpdiI6ImJJNU1VanoxNnBRUUlYY3VSaWZWMFE9PSIsInZhbHVlIjoiWXRCVU56L0V0QTU5Wm1EdDRGQkhMUlFnZ05iRnlJT3VlZGRqMXNyRE1WQnlpejZWVEtvbDBVOGNOcS80Nmg5VXA4aWptYWJjY3dRRFBIR1AwcW5HS0tnamRGTmNXUHNOTWNCWEIwcThENXNjRU5VT1VuV1Q0eWtHcTRJaVcxOHgiLCJtYWMiOiI4MGRkNmUxMWRhZjk0ZmM0MGM2OTY1MmM1MWExZWU4MjAyZTU2MWY3MDg1ZTYxMzk0OTMyNjg5MjdkNjk0YmRlIiwidGFnIjoiIn0%3D; expires=Sat, 23-Apr-2022 21:24:25 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"Yemen\",\n        \"logo\": \"9876.pmg\",\n        \"about\": \"Ali pharmacy\",\n        \"email\": \"ali@email.com\",\n        \"is_full_time\": 0,\n        \"from\": null,\n        \"to\": null,\n        \"address\": \"Yemen\",\n        \"lat\": null,\n        \"lng\": null,\n        \"user_id\": 1,\n        \"neighborhood_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": null,\n        \"updated_at\": \"2022-04-18T21:52:36.000000Z\",\n        \"user\": {\n            \"id\": 1,\n            \"name\": \"Ali\",\n            \"email\": \"super@gmail.com\",\n            \"email_verified_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"created_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"updated_at\": \"2022-04-23T17:10:39.000000Z\",\n            \"is_active\": 1\n        },\n        \"social\": null,\n        \"neighborhood\": {\n            \"id\": 1,\n            \"name\": \"Naif\",\n            \"directorate_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"directorate\": {\n                \"id\": 1,\n                \"name\": \"One\",\n                \"city_id\": 1,\n                \"deleted_at\": null,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"city\": {\n                    \"id\": 1,\n                    \"name\": \"Sana'a\",\n                    \"deleted_at\": null,\n                    \"created_at\": null,\n                    \"updated_at\": null\n                }\n            }\n        }\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Tokyo\",\n        \"logo\": \"123.png\",\n        \"about\": \"tokyo pharmacy\",\n        \"email\": \"ali@email.com\",\n        \"is_full_time\": 0,\n        \"from\": null,\n        \"to\": null,\n        \"address\": \"Yemen\",\n        \"lat\": null,\n        \"lng\": null,\n        \"user_id\": 2,\n        \"neighborhood_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": null,\n        \"updated_at\": null,\n        \"user\": {\n            \"id\": 2,\n            \"name\": \"pharmacy\",\n            \"email\": \"pharmacy@gmail.com\",\n            \"email_verified_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"created_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"updated_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"is_active\": 1\n        },\n        \"social\": null,\n        \"neighborhood\": {\n            \"id\": 1,\n            \"name\": \"Naif\",\n            \"directorate_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"directorate\": {\n                \"id\": 1,\n                \"name\": \"One\",\n                \"city_id\": 1,\n                \"deleted_at\": null,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"city\": {\n                    \"id\": 1,\n                    \"name\": \"Sana'a\",\n                    \"deleted_at\": null,\n                    \"created_at\": null,\n                    \"updated_at\": null\n                }\n            }\n        }\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Enas\",\n        \"logo\": \"123.png\",\n        \"about\": \"Enas pharmacy\",\n        \"email\": \"enas@email.com\",\n        \"is_full_time\": 0,\n        \"from\": null,\n        \"to\": null,\n        \"address\": \"Yemen\",\n        \"lat\": null,\n        \"lng\": null,\n        \"user_id\": 2,\n        \"neighborhood_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": null,\n        \"updated_at\": null,\n        \"user\": {\n            \"id\": 2,\n            \"name\": \"pharmacy\",\n            \"email\": \"pharmacy@gmail.com\",\n            \"email_verified_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"created_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"updated_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"is_active\": 1\n        },\n        \"social\": null,\n        \"neighborhood\": {\n            \"id\": 1,\n            \"name\": \"Naif\",\n            \"directorate_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"directorate\": {\n                \"id\": 1,\n                \"name\": \"One\",\n                \"city_id\": 1,\n                \"deleted_at\": null,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"city\": {\n                    \"id\": 1,\n                    \"name\": \"Sana'a\",\n                    \"deleted_at\": null,\n                    \"created_at\": null,\n                    \"updated_at\": null\n                }\n            }\n        }\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Naif 2\",\n        \"logo\": \"1234.png\",\n        \"about\": null,\n        \"email\": null,\n        \"is_full_time\": 0,\n        \"from\": null,\n        \"to\": null,\n        \"address\": null,\n        \"lat\": null,\n        \"lng\": null,\n        \"user_id\": 1,\n        \"neighborhood_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": \"2022-04-18T21:38:08.000000Z\",\n        \"updated_at\": \"2022-04-18T21:38:08.000000Z\",\n        \"user\": {\n            \"id\": 1,\n            \"name\": \"Ali\",\n            \"email\": \"super@gmail.com\",\n            \"email_verified_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"created_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"updated_at\": \"2022-04-23T17:10:39.000000Z\",\n            \"is_active\": 1\n        },\n        \"social\": null,\n        \"neighborhood\": {\n            \"id\": 1,\n            \"name\": \"Naif\",\n            \"directorate_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"directorate\": {\n                \"id\": 1,\n                \"name\": \"One\",\n                \"city_id\": 1,\n                \"deleted_at\": null,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"city\": {\n                    \"id\": 1,\n                    \"name\": \"Sana'a\",\n                    \"deleted_at\": null,\n                    \"created_at\": null,\n                    \"updated_at\": null\n                }\n            }\n        }\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Naif 2\",\n        \"logo\": \"9876.pmg\",\n        \"about\": \"Naif new pharmacy\",\n        \"email\": null,\n        \"is_full_time\": 0,\n        \"from\": null,\n        \"to\": null,\n        \"address\": null,\n        \"lat\": null,\n        \"lng\": null,\n        \"user_id\": 1,\n        \"neighborhood_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": \"2022-04-18T21:40:45.000000Z\",\n        \"updated_at\": \"2022-04-18T21:58:31.000000Z\",\n        \"user\": {\n            \"id\": 1,\n            \"name\": \"Ali\",\n            \"email\": \"super@gmail.com\",\n            \"email_verified_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"created_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"updated_at\": \"2022-04-23T17:10:39.000000Z\",\n            \"is_active\": 1\n        },\n        \"social\": null,\n        \"neighborhood\": {\n            \"id\": 1,\n            \"name\": \"Naif\",\n            \"directorate_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"directorate\": {\n                \"id\": 1,\n                \"name\": \"One\",\n                \"city_id\": 1,\n                \"deleted_at\": null,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"city\": {\n                    \"id\": 1,\n                    \"name\": \"Sana'a\",\n                    \"deleted_at\": null,\n                    \"created_at\": null,\n                    \"updated_at\": null\n                }\n            }\n        }\n    },\n    {\n        \"id\": 10,\n        \"name\": \"Naif 2\",\n        \"logo\": \"1234.png\",\n        \"about\": null,\n        \"email\": null,\n        \"is_full_time\": 0,\n        \"from\": null,\n        \"to\": null,\n        \"address\": null,\n        \"lat\": null,\n        \"lng\": null,\n        \"user_id\": 1,\n        \"neighborhood_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": \"2022-04-20T20:38:41.000000Z\",\n        \"updated_at\": \"2022-04-20T20:38:41.000000Z\",\n        \"user\": {\n            \"id\": 1,\n            \"name\": \"Ali\",\n            \"email\": \"super@gmail.com\",\n            \"email_verified_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"created_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"updated_at\": \"2022-04-23T17:10:39.000000Z\",\n            \"is_active\": 1\n        },\n        \"social\": null,\n        \"neighborhood\": {\n            \"id\": 1,\n            \"name\": \"Naif\",\n            \"directorate_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"directorate\": {\n                \"id\": 1,\n                \"name\": \"One\",\n                \"city_id\": 1,\n                \"deleted_at\": null,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"city\": {\n                    \"id\": 1,\n                    \"name\": \"Sana'a\",\n                    \"deleted_at\": null,\n                    \"created_at\": null,\n                    \"updated_at\": null\n                }\n            }\n        }\n    },\n    {\n        \"id\": 11,\n        \"name\": \"Naif 2\",\n        \"logo\": \"1234.png\",\n        \"about\": null,\n        \"email\": null,\n        \"is_full_time\": 0,\n        \"from\": null,\n        \"to\": null,\n        \"address\": null,\n        \"lat\": null,\n        \"lng\": null,\n        \"user_id\": 1,\n        \"neighborhood_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": \"2022-04-21T02:54:03.000000Z\",\n        \"updated_at\": \"2022-04-21T02:54:03.000000Z\",\n        \"user\": {\n            \"id\": 1,\n            \"name\": \"Ali\",\n            \"email\": \"super@gmail.com\",\n            \"email_verified_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"created_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"updated_at\": \"2022-04-23T17:10:39.000000Z\",\n            \"is_active\": 1\n        },\n        \"social\": null,\n        \"neighborhood\": {\n            \"id\": 1,\n            \"name\": \"Naif\",\n            \"directorate_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"directorate\": {\n                \"id\": 1,\n                \"name\": \"One\",\n                \"city_id\": 1,\n                \"deleted_at\": null,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"city\": {\n                    \"id\": 1,\n                    \"name\": \"Sana'a\",\n                    \"deleted_at\": null,\n                    \"created_at\": null,\n                    \"updated_at\": null\n                }\n            }\n        }\n    }\n]"
+						}
+					]
 				},
 				{
 					"name": "get one item",
@@ -771,7 +1315,60 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "get all",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{pharmacies}}",
+									"host": [
+										"{{pharmacies}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 23 Apr 2022 19:24:56 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 23 Apr 2022 19:24:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "laravel_session=eyJpdiI6IjAvY084ZngycVhwajlBUktBYUZsU0E9PSIsInZhbHVlIjoicHpKSDByL0pDYm1uNHlDWWlzYVpUM0h0eG5KcUErb2xoNGJUWlArV0JwUGQ2ZFlnMk90V3ArQ2Q0OE9BV2hVR3dlMVhQVjlZand1UCtqQnMrcjBaZEpLRGxCSC9zTTJhNHNLblFQZ1J4eUcvQUcvWWN2cGJJYXdkWGgrWVFETUsiLCJtYWMiOiJjYmUwOTViYTNiYzIzZWIwNmJkYWM5YjRhMTBkNWVmNTY1MGVjZjU1MGQxYmFkZTAwMWE4MzQ0NzhlOTYyNTA0IiwidGFnIjoiIn0%3D; expires=Sat, 23-Apr-2022 21:24:56 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"Yemen\",\n        \"logo\": \"9876.pmg\",\n        \"about\": \"Ali pharmacy\",\n        \"email\": \"ali@email.com\",\n        \"is_full_time\": 0,\n        \"from\": null,\n        \"to\": null,\n        \"address\": \"Yemen\",\n        \"lat\": null,\n        \"lng\": null,\n        \"user_id\": 1,\n        \"neighborhood_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": null,\n        \"updated_at\": \"2022-04-18T21:52:36.000000Z\",\n        \"user\": {\n            \"id\": 1,\n            \"name\": \"Ali\",\n            \"email\": \"super@gmail.com\",\n            \"email_verified_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"created_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"updated_at\": \"2022-04-23T17:10:39.000000Z\",\n            \"is_active\": 1\n        },\n        \"social\": null,\n        \"neighborhood\": {\n            \"id\": 1,\n            \"name\": \"Naif\",\n            \"directorate_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"directorate\": {\n                \"id\": 1,\n                \"name\": \"One\",\n                \"city_id\": 1,\n                \"deleted_at\": null,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"city\": {\n                    \"id\": 1,\n                    \"name\": \"Sana'a\",\n                    \"deleted_at\": null,\n                    \"created_at\": null,\n                    \"updated_at\": null\n                }\n            }\n        }\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Tokyo\",\n        \"logo\": \"123.png\",\n        \"about\": \"tokyo pharmacy\",\n        \"email\": \"ali@email.com\",\n        \"is_full_time\": 0,\n        \"from\": null,\n        \"to\": null,\n        \"address\": \"Yemen\",\n        \"lat\": null,\n        \"lng\": null,\n        \"user_id\": 2,\n        \"neighborhood_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": null,\n        \"updated_at\": null,\n        \"user\": {\n            \"id\": 2,\n            \"name\": \"pharmacy\",\n            \"email\": \"pharmacy@gmail.com\",\n            \"email_verified_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"created_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"updated_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"is_active\": 1\n        },\n        \"social\": null,\n        \"neighborhood\": {\n            \"id\": 1,\n            \"name\": \"Naif\",\n            \"directorate_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"directorate\": {\n                \"id\": 1,\n                \"name\": \"One\",\n                \"city_id\": 1,\n                \"deleted_at\": null,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"city\": {\n                    \"id\": 1,\n                    \"name\": \"Sana'a\",\n                    \"deleted_at\": null,\n                    \"created_at\": null,\n                    \"updated_at\": null\n                }\n            }\n        }\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Enas\",\n        \"logo\": \"123.png\",\n        \"about\": \"Enas pharmacy\",\n        \"email\": \"enas@email.com\",\n        \"is_full_time\": 0,\n        \"from\": null,\n        \"to\": null,\n        \"address\": \"Yemen\",\n        \"lat\": null,\n        \"lng\": null,\n        \"user_id\": 2,\n        \"neighborhood_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": null,\n        \"updated_at\": null,\n        \"user\": {\n            \"id\": 2,\n            \"name\": \"pharmacy\",\n            \"email\": \"pharmacy@gmail.com\",\n            \"email_verified_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"created_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"updated_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"is_active\": 1\n        },\n        \"social\": null,\n        \"neighborhood\": {\n            \"id\": 1,\n            \"name\": \"Naif\",\n            \"directorate_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"directorate\": {\n                \"id\": 1,\n                \"name\": \"One\",\n                \"city_id\": 1,\n                \"deleted_at\": null,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"city\": {\n                    \"id\": 1,\n                    \"name\": \"Sana'a\",\n                    \"deleted_at\": null,\n                    \"created_at\": null,\n                    \"updated_at\": null\n                }\n            }\n        }\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Naif 2\",\n        \"logo\": \"1234.png\",\n        \"about\": null,\n        \"email\": null,\n        \"is_full_time\": 0,\n        \"from\": null,\n        \"to\": null,\n        \"address\": null,\n        \"lat\": null,\n        \"lng\": null,\n        \"user_id\": 1,\n        \"neighborhood_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": \"2022-04-18T21:38:08.000000Z\",\n        \"updated_at\": \"2022-04-18T21:38:08.000000Z\",\n        \"user\": {\n            \"id\": 1,\n            \"name\": \"Ali\",\n            \"email\": \"super@gmail.com\",\n            \"email_verified_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"created_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"updated_at\": \"2022-04-23T17:10:39.000000Z\",\n            \"is_active\": 1\n        },\n        \"social\": null,\n        \"neighborhood\": {\n            \"id\": 1,\n            \"name\": \"Naif\",\n            \"directorate_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"directorate\": {\n                \"id\": 1,\n                \"name\": \"One\",\n                \"city_id\": 1,\n                \"deleted_at\": null,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"city\": {\n                    \"id\": 1,\n                    \"name\": \"Sana'a\",\n                    \"deleted_at\": null,\n                    \"created_at\": null,\n                    \"updated_at\": null\n                }\n            }\n        }\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Naif 2\",\n        \"logo\": \"9876.pmg\",\n        \"about\": \"Naif new pharmacy\",\n        \"email\": null,\n        \"is_full_time\": 0,\n        \"from\": null,\n        \"to\": null,\n        \"address\": null,\n        \"lat\": null,\n        \"lng\": null,\n        \"user_id\": 1,\n        \"neighborhood_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": \"2022-04-18T21:40:45.000000Z\",\n        \"updated_at\": \"2022-04-18T21:58:31.000000Z\",\n        \"user\": {\n            \"id\": 1,\n            \"name\": \"Ali\",\n            \"email\": \"super@gmail.com\",\n            \"email_verified_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"created_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"updated_at\": \"2022-04-23T17:10:39.000000Z\",\n            \"is_active\": 1\n        },\n        \"social\": null,\n        \"neighborhood\": {\n            \"id\": 1,\n            \"name\": \"Naif\",\n            \"directorate_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"directorate\": {\n                \"id\": 1,\n                \"name\": \"One\",\n                \"city_id\": 1,\n                \"deleted_at\": null,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"city\": {\n                    \"id\": 1,\n                    \"name\": \"Sana'a\",\n                    \"deleted_at\": null,\n                    \"created_at\": null,\n                    \"updated_at\": null\n                }\n            }\n        }\n    },\n    {\n        \"id\": 10,\n        \"name\": \"Naif 2\",\n        \"logo\": \"1234.png\",\n        \"about\": null,\n        \"email\": null,\n        \"is_full_time\": 0,\n        \"from\": null,\n        \"to\": null,\n        \"address\": null,\n        \"lat\": null,\n        \"lng\": null,\n        \"user_id\": 1,\n        \"neighborhood_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": \"2022-04-20T20:38:41.000000Z\",\n        \"updated_at\": \"2022-04-20T20:38:41.000000Z\",\n        \"user\": {\n            \"id\": 1,\n            \"name\": \"Ali\",\n            \"email\": \"super@gmail.com\",\n            \"email_verified_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"created_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"updated_at\": \"2022-04-23T17:10:39.000000Z\",\n            \"is_active\": 1\n        },\n        \"social\": null,\n        \"neighborhood\": {\n            \"id\": 1,\n            \"name\": \"Naif\",\n            \"directorate_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"directorate\": {\n                \"id\": 1,\n                \"name\": \"One\",\n                \"city_id\": 1,\n                \"deleted_at\": null,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"city\": {\n                    \"id\": 1,\n                    \"name\": \"Sana'a\",\n                    \"deleted_at\": null,\n                    \"created_at\": null,\n                    \"updated_at\": null\n                }\n            }\n        }\n    },\n    {\n        \"id\": 11,\n        \"name\": \"Naif 2\",\n        \"logo\": \"1234.png\",\n        \"about\": null,\n        \"email\": null,\n        \"is_full_time\": 0,\n        \"from\": null,\n        \"to\": null,\n        \"address\": null,\n        \"lat\": null,\n        \"lng\": null,\n        \"user_id\": 1,\n        \"neighborhood_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": \"2022-04-21T02:54:03.000000Z\",\n        \"updated_at\": \"2022-04-21T02:54:03.000000Z\",\n        \"user\": {\n            \"id\": 1,\n            \"name\": \"Ali\",\n            \"email\": \"super@gmail.com\",\n            \"email_verified_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"created_at\": \"2022-04-18T20:19:30.000000Z\",\n            \"updated_at\": \"2022-04-23T17:10:39.000000Z\",\n            \"is_active\": 1\n        },\n        \"social\": null,\n        \"neighborhood\": {\n            \"id\": 1,\n            \"name\": \"Naif\",\n            \"directorate_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"directorate\": {\n                \"id\": 1,\n                \"name\": \"One\",\n                \"city_id\": 1,\n                \"deleted_at\": null,\n                \"created_at\": null,\n                \"updated_at\": null,\n                \"city\": {\n                    \"id\": 1,\n                    \"name\": \"Sana'a\",\n                    \"deleted_at\": null,\n                    \"created_at\": null,\n                    \"updated_at\": null\n                }\n            }\n        }\n    }\n]"
+						}
+					]
 				},
 				{
 					"name": "add",
@@ -924,7 +1521,60 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "home page",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{web}}",
+									"host": [
+										"{{web}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 23 Apr 2022 19:25:32 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 23 Apr 2022 19:25:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "laravel_session=eyJpdiI6ImFSR0tZSkRTeHY0Nzh4T0h4cjNoM3c9PSIsInZhbHVlIjoiRTVQVjU3elR2aXVXMmNJMWM0VzJ6L2habDNLK2VEV2RoOFBBbldyT0RBTzdySnpKcFNROW9aTHVjdWJNWlJyWHVjTHZhV2hNK2JYL1BpN1I3Z25JejlrdmFCK1dZblZ1U0xKV0hJNjZiOWJzV2tiejRPWklCWFZUUVVKVTM2dS8iLCJtYWMiOiI0OTExMjE5MDQ3NjY1MjMzNzhhYjJhOThkNzM2ZDM4NjBiMmZhNTM4ZmRlYjJlM2YzZTBhYjc2ZmY4NzFhZDI1IiwidGFnIjoiIn0%3D; expires=Sat, 23-Apr-2022 21:25:32 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"about-us\": {\n        \"id\": 4,\n        \"title\": \"title here bla bla bla b title here bla bla bla b\",\n        \"sub_title\": \"sub title title here bla bla bla btitle here bla bla bla btitle here bla bla bla btitle here bla bla bla b\",\n        \"about\": \"about us title here bla bla bla btitle here bla bla bla b\",\n        \"user_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": null,\n        \"updated_at\": \"2022-04-21T20:31:19.000000Z\"\n    },\n    \"services\": [\n        {\n            \"id\": 1,\n            \"name\": \"title here bla bla bla b title here bla bla bla b\",\n            \"desc\": \"sub title title here bla bla bla btitle here bla bla bla btitle here bla bla bla btitle here bla bla bla b\",\n            \"icon\": \"about us title here bla bla bla btitle here bla bla bla b\",\n            \"user_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": null,\n            \"updated_at\": \"2022-04-22T01:18:30.000000Z\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"new service for our site\",\n            \"desc\": \"sub title title here bla bla bla btitle here bla bla bla btitle here bla bla bla btitle here bla bla bla b\",\n            \"icon\": \"about us title here bla bla bla btitle here bla bla bla b\",\n            \"user_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": \"2022-04-22T01:25:08.000000Z\",\n            \"updated_at\": \"2022-04-22T01:25:08.000000Z\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"naif naif naif naif naif naif\",\n            \"desc\": \"sub title title here bla bla bla btitle here bla bla bla btitle here bla bla bla btitle here bla bla bla b\",\n            \"icon\": \"about us title here bla bla bla btitle here bla bla bla b\",\n            \"user_id\": 1,\n            \"deleted_at\": null,\n            \"created_at\": \"2022-04-22T01:27:13.000000Z\",\n            \"updated_at\": \"2022-04-22T01:27:40.000000Z\"\n        }\n    ],\n    \"contact-us\": {\n        \"id\": 2,\n        \"phone\": \"123456789\",\n        \"email\": \"em@gmial.com\",\n        \"user_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": null,\n        \"updated_at\": \"2022-04-22T01:34:16.000000Z\"\n    },\n    \"social\": {\n        \"id\": 1,\n        \"facebook\": \"facebook.com/new\",\n        \"whatsapp\": \"whatsapp.com\",\n        \"twitter\": \"twitter.com\",\n        \"instagram\": \"instagram.com\",\n        \"user_id\": 1,\n        \"deleted_at\": null,\n        \"created_at\": null,\n        \"updated_at\": \"2022-04-22T01:42:54.000000Z\"\n    }\n}"
+						}
+					]
 				}
 			]
 		}
