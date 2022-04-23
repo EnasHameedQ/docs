@@ -1,0 +1,974 @@
+{
+	"info": {
+		"_postman_id": "ecab3a8d-0502-4cdf-8854-ded8fc8b2ebd",
+		"name": "0-pharmacies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "ads",
+					"item": [
+						{
+							"name": "get all",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{admin}}/ads",
+									"host": [
+										"{{admin}}"
+									],
+									"path": [
+										"ads"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get one item",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{admin}}/ads/2",
+									"host": [
+										"{{admin}}"
+									],
+									"path": [
+										"ads",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "ad title",
+											"contentType": "",
+											"type": "default"
+										},
+										{
+											"key": "image",
+											"value": "1234.png",
+											"type": "default"
+										},
+										{
+											"key": "link",
+											"value": "https:://google.com",
+											"type": "default"
+										},
+										{
+											"key": "ad_position",
+											"value": "home",
+											"type": "default"
+										},
+										{
+											"key": "start_at",
+											"value": "2022-04-20 21:00:33",
+											"type": "default"
+										},
+										{
+											"key": "end_at",
+											"value": "2022-05-20 21:00:33",
+											"type": "default"
+										},
+										{
+											"key": "user_id",
+											"value": "1",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{admin}}/ads",
+									"host": [
+										"{{admin}}"
+									],
+									"path": [
+										"ads"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "multipart/form-data",
+										"type": "default",
+										"disabled": true
+									},
+									{
+										"key": "_method",
+										"value": "PUT",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "updated title",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"value": "1234.png",
+											"type": "text"
+										},
+										{
+											"key": "link",
+											"value": "https:://google.com",
+											"type": "text"
+										},
+										{
+											"key": "ad_position",
+											"value": "home",
+											"type": "text"
+										},
+										{
+											"key": "start_at",
+											"value": "2022-04-20 21:00:33",
+											"type": "text"
+										},
+										{
+											"key": "end_at",
+											"value": "2022-05-20 21:00:33",
+											"type": "text"
+										},
+										{
+											"key": "user_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "_method",
+											"value": "PUT",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{admin}}/ads/9",
+									"host": [
+										"{{admin}}"
+									],
+									"path": [
+										"ads",
+										"9"
+									],
+									"query": [
+										{
+											"key": "x-www-form-urlencode",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{admin}}/ads/2",
+									"host": [
+										"{{admin}}"
+									],
+									"path": [
+										"ads",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "site",
+					"item": [
+						{
+							"name": "about us",
+							"item": [
+								{
+									"name": "update about us",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "multipart/form-data",
+												"type": "default",
+												"disabled": true
+											},
+											{
+												"key": "_method",
+												"value": "PUT",
+												"type": "default",
+												"disabled": true
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "title here bla bla bla b title here bla bla bla b",
+													"type": "text"
+												},
+												{
+													"key": "sub_title",
+													"value": "sub title title here bla bla bla btitle here bla bla bla btitle here bla bla bla btitle here bla bla bla b",
+													"type": "default"
+												},
+												{
+													"key": "about",
+													"value": "about us title here bla bla bla btitle here bla bla bla b",
+													"type": "default"
+												},
+												{
+													"key": "user_id",
+													"value": "1 ",
+													"type": "text"
+												},
+												{
+													"key": "_method",
+													"value": "PUT",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{admin}}/site/about-us",
+											"host": [
+												"{{admin}}"
+											],
+											"path": [
+												"site",
+												"about-us"
+											],
+											"query": [
+												{
+													"key": "x-www-form-urlencode",
+													"value": null,
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "services",
+							"item": [
+								{
+									"name": "add",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "new service for our site",
+													"type": "text"
+												},
+												{
+													"key": "desc",
+													"value": "sub title title here bla bla bla btitle here bla bla bla btitle here bla bla bla btitle here bla bla bla b",
+													"type": "default"
+												},
+												{
+													"key": "icon",
+													"value": "about us title here bla bla bla btitle here bla bla bla b",
+													"type": "default"
+												},
+												{
+													"key": "user_id",
+													"value": "1",
+													"type": "default"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{admin}}/site/services",
+											"host": [
+												"{{admin}}"
+											],
+											"path": [
+												"site",
+												"services"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "update",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "naif naif naif naif naif naif ",
+													"type": "text"
+												},
+												{
+													"key": "desc",
+													"value": "sub title title here bla bla bla btitle here bla bla bla btitle here bla bla bla btitle here bla bla bla b",
+													"type": "default"
+												},
+												{
+													"key": "icon",
+													"value": "about us title here bla bla bla btitle here bla bla bla b",
+													"type": "default"
+												},
+												{
+													"key": "_method",
+													"value": "PUT",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{admin}}/site/services/3",
+											"host": [
+												"{{admin}}"
+											],
+											"path": [
+												"site",
+												"services",
+												"3"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "contact us",
+							"item": [
+								{
+									"name": "update",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "phone",
+													"value": "123456789",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "em@gmial.com",
+													"type": "default"
+												},
+												{
+													"key": "_method",
+													"value": "PUT",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{admin}}/site/contact-us",
+											"host": [
+												"{{admin}}"
+											],
+											"path": [
+												"site",
+												"contact-us"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "social",
+							"item": [
+								{
+									"name": "update",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "facebook",
+													"value": " facebook.com/new",
+													"type": "text"
+												},
+												{
+													"key": "whatsapp",
+													"value": " whatsapp.com",
+													"type": "text"
+												},
+												{
+													"key": "twitter",
+													"value": " twitter.com",
+													"type": "text"
+												},
+												{
+													"key": "instagram",
+													"value": " instagram.com",
+													"type": "text"
+												},
+												{
+													"key": "_method",
+													"value": "PUT",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{admin}}/site/social",
+											"host": [
+												"{{admin}}"
+											],
+											"path": [
+												"site",
+												"social"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "get",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{admin}}/site",
+									"host": [
+										"{{admin}}"
+									],
+									"path": [
+										"site"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "clients",
+					"item": [
+						{
+							"name": "get all",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{admin}}/clients",
+									"host": [
+										"{{admin}}"
+									],
+									"path": [
+										"clients"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "orders",
+					"item": [
+						{
+							"name": "get all",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{admin}}/orders",
+									"host": [
+										"{{admin}}"
+									],
+									"path": [
+										"orders"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "pharmacies",
+					"item": [
+						{
+							"name": "get all",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{admin}}/pharmacies?city=sana&pharmacy_name=ali",
+									"host": [
+										"{{admin}}"
+									],
+									"path": [
+										"pharmacies"
+									],
+									"query": [
+										{
+											"key": "city",
+											"value": "sana"
+										},
+										{
+											"key": "pharmacy_name",
+											"value": "ali"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "profile",
+					"item": [
+						{
+							"name": "get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{admin}}/profile?id=1",
+									"host": [
+										"{{admin}}"
+									],
+									"path": [
+										"profile"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "1",
+											"type": "default"
+										},
+										{
+											"key": "name",
+											"value": "Ali",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{admin}}/profile",
+									"host": [
+										"{{admin}}"
+									],
+									"path": [
+										"profile"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "client",
+			"item": [
+				{
+					"name": "profile",
+					"item": [
+						{
+							"name": "get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{clients}}/profile?id=1",
+									"host": [
+										"{{clients}}"
+									],
+									"path": [
+										"profile"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id",
+											"value": "1",
+											"type": "default"
+										},
+										{
+											"key": "full_name",
+											"value": "Ali ahmed",
+											"type": "default"
+										},
+										{
+											"key": "phone",
+											"value": "123456789222",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{clients}}/profile?id=3",
+									"host": [
+										"{{clients}}"
+									],
+									"path": [
+										"profile"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "pharmacies",
+			"item": [
+				{
+					"name": "get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{pharmacies}}",
+							"host": [
+								"{{pharmacies}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get one item",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{pharmacies}}/2",
+							"host": [
+								"{{pharmacies}}"
+							],
+							"path": [
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Naif 2",
+									"type": "default"
+								},
+								{
+									"key": "logo",
+									"value": "1234.png",
+									"type": "default"
+								},
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "neighborhood_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{pharmacies}}",
+							"host": [
+								"{{pharmacies}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "default",
+								"disabled": true
+							},
+							{
+								"key": "_method",
+								"value": "PUT",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "new name",
+									"type": "default"
+								},
+								{
+									"key": "logo",
+									"value": "9876.pmg",
+									"type": "default"
+								},
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "neighborhood_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "_method",
+									"value": "PUT",
+									"type": "default"
+								},
+								{
+									"key": "about",
+									"value": "Naif new pharmacy",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{pharmacies}}/2",
+							"host": [
+								"{{pharmacies}}"
+							],
+							"path": [
+								"2"
+							],
+							"query": [
+								{
+									"key": "x-www-form-urlencode",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{pharmacies}}/2",
+							"host": [
+								"{{pharmacies}}"
+							],
+							"path": [
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "web",
+			"item": [
+				{
+					"name": "home page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{web}}",
+							"host": [
+								"{{web}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "admin",
+			"value": "http://127.0.0.1:8000/admin",
+			"type": "default"
+		},
+		{
+			"key": "clients",
+			"value": "http://127.0.0.1:8000/clients",
+			"type": "default"
+		},
+		{
+			"key": "pharmacies",
+			"value": "http://127.0.0.1:8000/pharmacies",
+			"type": "default"
+		},
+		{
+			"key": "web",
+			"value": "http://127.0.0.1:8000",
+			"type": "default"
+		}
+	]
+}
